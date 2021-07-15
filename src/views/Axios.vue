@@ -34,7 +34,7 @@ export default defineComponent({
     const getUserInfo = () => {
       loading.value = true
       axios
-        .get('/users/XPoet')
+        .get('/users/varandrew')
         .then((response) => {
           console.log('response: ', response.data)
           userInfo.value = response.data
@@ -56,38 +56,21 @@ export default defineComponent({
 </script>
 
 <style scoped lang="stylus">
-
-.axios-container {
-
-  .user-info-container {
+.axios-container
+  .user-info-container
     display flex
     justify-content center
     width 100%
-
-    .info-list-box {
+    .info-list-box
       padding 10px
-
-      .text {
-        font-size: 14px;
-      }
-
-      .item {
-        margin-bottom: 18px;
-      }
-
-    }
-
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .box-card {
-      width: 480px;
-    }
-
-  }
-
-}
+      .text
+        font-size 14px
+      .item
+        margin-bottom 18px
+    .card-header
+      display flex
+      justify-content space-between
+      align-items center
+    .box-card
+      width 480px
 </style>

@@ -17,13 +17,12 @@ const router = useRouter()
 
 // eslint-disable-next-line no-unused-vars
 const goGitHub = () => {
-  window.open('https://github.com/XPoet/vite-vue3-starter')
+  window.open('https://github.com/varandrew/vue3-quick-starter')
 }
 </script>
 
 <style scoped lang="stylus">
-
-.header {
+.header
   width 100%
   height 100%
   background #fff
@@ -33,19 +32,12 @@ const goGitHub = () => {
   padding 0 20px
   box-sizing border-box
   font-weight bold
-
-  .title {
+  .title
     font-size 20px
     cursor pointer
-  }
-
-  .go-github {
+  .go-github
     cursor pointer
     font-size 16px
-
-    .icon {
+    .icon
       font-size 20px
-    }
-  }
-}
 </style>
