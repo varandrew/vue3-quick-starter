@@ -1,7 +1,7 @@
 import Axios, { AxiosInstance } from 'axios'
 import { ElMessage } from 'element-plus'
 
-const baseURL = 'https://api.github.com'
+const baseURL = import.meta.env.VITE_BASE_URL
 
 const axios: AxiosInstance = Axios.create({
   baseURL,
