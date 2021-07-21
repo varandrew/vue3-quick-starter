@@ -28,7 +28,10 @@ module.exports = {
         props: true,
         ignorePropertyModificationsFor: ['state', 'config']
       }
-    ]
+    ],
+    'no-unused-vars': 'off',
+    'class-methods-use-this': 'off',
+    'no-shadow': 'off'
   },
   settings: {}
 }

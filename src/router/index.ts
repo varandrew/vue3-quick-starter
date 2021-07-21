@@ -3,7 +3,13 @@ import Home from '@/views/Home.vue'
 import Vuex from '@/views/Vuex.vue'
 import Test from '@/views/Test.vue'
 
-const routes: Array<RouteRecordRaw> = [
+type AppRouteRecordRaw = RouteRecordRaw & {
+  name?: string
+  icon?: string
+  hidden?: boolean
+}
+
+const routes: Array<AppRouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
